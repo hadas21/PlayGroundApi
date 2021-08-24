@@ -12,7 +12,7 @@ chai.use(chaiHttp)
 
 const user = {
   credentials: {
-    email: 'foo@bar.baz',
+    username: 'foo@bar.baz',
     password: '12345',
     password_confirmation: '12345'
   }
@@ -20,14 +20,14 @@ const user = {
 
 const updatedUser = {
   credentials: {
-    email: 'foo@bar.baz',
+    username: 'foo@bar.baz',
     password: '54321'
   }
 }
 
 const nonMatchingPasswordsUser = {
   credentials: {
-    email: 'dont@type.good',
+    username: 'dont@type.good',
     password: '12345',
     password_confirmation: '54321'
   }
@@ -41,7 +41,7 @@ describe('Users', () => {
       .then(() => bcrypt.hash(user.credentials.password, 10))
       .then(hash => {
         return {
-          email: user.credentials.email,
+          username: user.credentials.username,
           hashedPassword: hash,
           token
         }
@@ -58,7 +58,7 @@ describe('Users', () => {
   })
 
   describe('POST /sign-up', () => {
-    it('should reject users with duplicate emails', done => {
+    it('should reject users with duplicate username', done => {
       chai.request(server)
         .post('/sign-up')
         .send(user)
@@ -102,7 +102,7 @@ describe('Users', () => {
               res.should.have.status(201)
               res.should.be.a('object')
               res.body.should.have.property('user')
-              res.body.user.should.have.property('email').eql(user.credentials.email)
+              res.body.user.should.have.property('username').eql(user.credentials.username)
               done()
             })
         })

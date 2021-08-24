@@ -19,7 +19,7 @@ const router = express.Router()
 // GET /locations
 router.get('/locations', requireToken, (req, res, next) => {
   
-    Location.find()
+    Location.find({ owner: req.user.id })
     .then(locations => {
       return locations.map(location => location.toObject())
     })
