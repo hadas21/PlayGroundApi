@@ -25,7 +25,7 @@ describe('Examples', () => {
   before(done => {
     Example.deleteMany({})
       .then(() => User.create({
-        email: 'caleb',
+        username: 'caleb',
         hashedPassword: '12345',
         token
       }))
