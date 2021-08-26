@@ -1,18 +1,21 @@
 const mongoose = require('mongoose')
 
-const User = require('./../models/user')
-
-
 const Schema = mongoose.Schema
 
 const friendSchema = new Schema(
   {
     username: {
-      type: String
+      type: String,
+      required: true
     },
     location: {
         type: String,
-        owner: { type: Schema.Types.ObjectId, ref: 'User' }
+        required: true
+    },
+    owner: { 
+      type: Schema.Types.ObjectId, 
+      ref: 'User',
+      required: true
     },
   },
   {
@@ -20,4 +23,4 @@ const friendSchema = new Schema(
   }
 )
 
-module.exports = friendSchema
+module.exports = mongoose.model('Friend',friendSchema)
