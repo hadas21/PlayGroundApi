@@ -10,6 +10,10 @@ const locationSchema = new mongoose.Schema(
       type: String,
       required: true
     },
+    coordinates: {
+      type: Array,
+      required: true
+    },
     owner: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
