@@ -30,6 +30,7 @@ Log in and make the world your playground. Show off your favorite places around 
 ## Mockup
 ![Mockup](https://i.imgur.com/up6CD99.png)
 
+## [Api Documentation](/ApiDocumentation.md)
 ## Technology Used
 - [Express - Node.js](https://expressjs.com/)
 - [MongoDB Atlas](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjVyrXKnNXyAhWalIYKHQaSCdgYABADGgJ2dQ&ae=2&ohost=www.google.com&cid=CAESQeD231gmQHuxUe_r1E8L-Q5m3JYSsJVvdxjN3PKt_HvDo8anw0epM4dhEwGludveMPeIvYTEj79RYVq0rZuTYRY9&sig=AOD64_2FuxEVr2jn1C7EM9YdPPcoN2orLg&q=&ved=2ahUKEwib8a3KnNXyAhU8SjABHegFADwQqyQoAHoECAMQEQ&adurl=)
