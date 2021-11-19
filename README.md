@@ -4,12 +4,14 @@ Log in and make the world your playground. Show off your favorite places around 
 
 ## Directory
 
-[Project Repository](https://github.com/ProjectPlayGroundLHA)<br />
-[Client](https://projectplaygroundlha.github.io/PlayGroundClient/)<br />
-[Server](https://github.com/ProjectPlayGroundLHA/PlayGroundApi)<br />
-[Heroku](https://mysterious-plains-31294.herokuapp.com/)<br />
-[Api Documentation](/ApiDocumentation.md)<br />
-[ERD](https://i.imgur.com/G1oDzFW.png)
+- [Project Repository](https://github.com/ProjectPlayGroundLHA)<br />
+- [Live Site](https://projectplaygroundlha.github.io/PlayGroundClient/)<br />
+- [Client Repository](https://github.com/ProjectPlayGroundLHA/PlayGroundClient)<br />
+- [Server Repository](https://github.com/ProjectPlayGroundLHA/PlayGroundApi)<br />
+- [Heroku](https://mysterious-plains-31294.herokuapp.com/)<br />
+- [Api Documentation](/ApiDocumentation.md)<br />
+- [Entity Relationship Diagram (ERD)](https://i.imgur.com/G1oDzFW.png)
+- Demo Account: `user` Password: `test`
 
 ## Get Started
 
