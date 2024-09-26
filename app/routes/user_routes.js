@@ -97,6 +97,24 @@ router.post('/sign-in', (req, res, next) => {
     .catch(next)
 })
 
+// INDEX
+// GET /users
+router.get('/users', (req, res, next) => {
+  // const pw = req.body.credentials.password
+  // let user
+
+  // find a user based on the username that was passed
+  User.find()
+    .then((users) => {
+      return users.map((user) => user.toObject())
+    })
+    .then((user) => {
+      // return status 201, the username, and the new token
+      res.status(201).json({ user })
+    })
+    .catch(next)
+})
+
 // CHANGE password
 // PATCH /change-password
 router.patch('/change-password', requireToken, (req, res, next) => {
